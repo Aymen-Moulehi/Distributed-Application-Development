@@ -1,0 +1,31 @@
+package client ;
+import java.io.Serializable;
+
+
+
+
+public class Operateur implements Serializable{
+    
+    Double x ;
+    Double y ;
+     String op;
+    
+    public Operateur(Double x,Double y,String op){
+        this.x = x ;
+        this.y = y ;
+        this.op = op ;
+        
+        
+    }
+    
+    public Double getx(){
+        return x ;
+    }
+    public Double gety(){
+        return y ;
+    }
+    public String getop(){
+        return op ;
+    }
+    
+}
