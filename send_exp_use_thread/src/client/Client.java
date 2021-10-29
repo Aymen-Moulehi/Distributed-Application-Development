@@ -36,25 +36,26 @@ public class Client {
 						op = scan.nextLine();
 						scan.nextLine();
 
-						
+						//creation d'objet
 						Operateur o = new Operateur(x,y,op);
 						    
 						    
 						    
-						    
-						    OutputStream outputStream = s.getOutputStream();
+						//envoi d'objet   
+						OutputStream outputStream = s.getOutputStream();
       
-						    ObjectOutputStream os = new ObjectOutputStream(outputStream) ;
+						ObjectOutputStream os = new ObjectOutputStream(outputStream) ;
 						    
-						    os.writeObject(o);
+						os.writeObject(o);
+						
+						
 					}
+                    
+                    // recoit du resultat
                     InputStream is = s.getInputStream();
-                        BufferedReader br = new BufferedReader(new InputStreamReader(is)) ;
-            
-            
-                        System.out.println(br.readLine());
-                        
-                        s.close();
+                    BufferedReader br = new BufferedReader(new InputStreamReader(is)) ;
+                    System.out.println(br.readLine());
+                    s.close();
                
                     
                     

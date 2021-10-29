@@ -6,10 +6,8 @@ import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author aymen
- */
+
+
 public class Server {
     public static void main(String args[]) throws IOException{
     int n = 0;

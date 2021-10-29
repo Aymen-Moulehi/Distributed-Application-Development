@@ -12,31 +12,45 @@ import java.net.Socket;
 
 
 
-/**
- *
- * @author aymen
- */
+
 public class Server2 extends Thread {
-    int n =0 ;
-    
-    @Override
+    static int n =0 ;
+    static Socket s ;
+
+    public Server2(Socket s,int n){
+    	super();
+    	Server2.n = n;
+    	Server2.s = s;
+    }
     public void run(){
-            try{
-           ServerSocket ss = new ServerSocket(5555);
-           while(true){
-               Socket s = ss.accept();
-               n += 1 ;
-               new ClinetProccess2(s,n).start();
-           } 
-               
-           }catch(IOException e){
-               System.out.println("probleme !!!");
-           }
+        System.out.println("Bonjour ke client numero "+n+": ");
+        try{
+            s.close();
+        }catch(IOException e){
+            System.out.println("<!> il ya un probleme <!>");
+        }
            }
     
     public static void main(String args[]){
         
-        new Server2().start();
-        
+    	 try{
+    	        try (ServerSocket ss = new ServerSocket(5555)) {
+    				while(true){
+    					//accept client 
+    					Socket s1 = ss.accept();
+    				    n+=1;
+    				    Server2 sev = new Server2(s1,n);
+    				    sev.start();
+    				   
+    				}
+    			
+    	        } 
+    	            
+    	        }catch(IOException e){
+    	            System.out.println("probleme !!!");
+    	        }
+    	        
+    	    }
     }
-           }
+           
+
