@@ -39,3 +39,16 @@
 ![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/tp4exe2client.png)
 ### serveur
 ![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/tp4exe2serveur.png)
+# Tp5
+### exercice 1
+### client
+![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/tp5.0.png)
+### exercice 2
+### client
+![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/tp5.2.png)
+### exercice 3
+### client
+![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/tp5.3.png)
+### exercice 4 (Banque App)
+### client
+![tp](https://github.com/Aymen-Moulehi/Distributed-Application-Development/blob/main/Capture/banque.png)
