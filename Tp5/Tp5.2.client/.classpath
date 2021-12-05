@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/aymen/eclipse-workspace2/Calculatrice.jar"/>
+	<classpathentry kind="lib" path="/home/aymen/Documents/eclipse-workspace/JARS/Calculatrice.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
